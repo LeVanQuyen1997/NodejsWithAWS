@@ -1,0 +1,49 @@
+<div class="modal fade" id="modalLoginForm1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">ĐĂNG KÝ</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <form role="form" action="/signin" method="POST">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control"  placeholder="User" name="username" required>
+                                <label style="background:rgb(27, 177, 40);color:white" class="input-group-addon glyphicon glyphicon-user"></label>
+                            </div>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="password" class="form-control"  placeholder="Password" name="password" required>
+                                <label style="background:rgb(27, 177, 40);color:white" class="input-group-addon glyphicon glyphicon-lock"></label>
+                            </div>
+                            <!-- /.input-group -->
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="email" class="form-control"  placeholder="Email" name="email" required>
+                                <label style="background:rgb(27, 177, 40);color:white" class="input-group-addon glyphicon glyphicon-envelope"></label>
+                            </div>
+                            <!-- /.input-group -->
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" class="form-control"  placeholder="Address" name="address" required>
+                                <label style="background:rgb(27, 177, 40);color:white" class="input-group-addon glyphicon glyphicon-globe "></label>
+                            </div>
+                            <!-- /.input-group -->
+                        </div>
+                        <div class="modal-footer">
+                                <button type="submit" class="btn " style="background:rgb(27, 177, 40);color:white">ĐĂNG KÝ</button>
+                        </div>
+                    </form>
+
+                </div>
+               
+            </div>
+        </div>

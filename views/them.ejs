@@ -1,0 +1,53 @@
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Ua</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body ">
+                    <form action="/themsanpham" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label>Mã:</label>
+                            <input type="text" class="form-control" placeholder="Nhap Mã" name="ma" value="" required />
+                        </div>
+    
+                        <div class="form-group">
+                            <label>Tên :</label>
+                            <input type="text" class="form-control" placeholder="Nhap Tên" name="ten" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>Gia :</label>
+                            <input type="number" class="form-control" placeholder="Nhap Gía" name="gia" value="" required/>
+                        </div>
+                        <div className="form-group">
+                            <label>Loại</label>
+                            <select class="form-control" name="loai" value="" required>
+                                <option value="PC1">Cơm Trưa</option>
+                                <option value="PC1">Nước Uống</option>
+                                <option value="PC3">Cà Phê</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Ảnh</label>
+                            <input class="form-control" name="upload" type="file" accept=".jpg,.jpeg,.png" />
+                        </div>
+                        <div class="form-group">
+                            <label>Mô Tả</label>
+                            <textarea class="form-control rounded-0" rows="3" required name="mota">
+    
+                            </textarea>
+                        </div>
+                        <div class="text-center" style="margin-top:50px">
+                            <button type="submit" class="btn btn-success">Luu Lai</button>
+                            &nbsp;
+                            <a class="btn btn-danger" href="/huybo">Huy Bo</a>
+                        </div>
+                    </form>
+                </div>
+    
+            </div>
+        </div>
+    </div>

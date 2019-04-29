@@ -1,0 +1,88 @@
+<% include ../Header/header.ejs%>
+    <!--category-->
+
+    <div class="content">
+
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row xemthem">
+                    <!--tieu de-->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <span id="xem">GIỎ HÀNG CỦA BẠN</span>
+                    </div>
+                    <!--tieu de-->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <table class="table table-hover" style="margin-top:70px">
+                    <thead>
+                        <tr>
+                            <th style="width:500px">Tên Sản Phẩm</th>
+                            <th item-width="100px">Giá</th>
+                            <th item-width="300px">Số Lượng</th>
+                            <th item-width="500px">Tổng Tiền</th>
+                            <th style="width:100px">Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% giohang.forEach(item=>{%>
+                            <tr>
+                                <td>
+                                    <img src="<%= item.img%>" width="20%">
+                                    <%= item.tensp%>
+                                </td>
+                                <td>
+                                    <%= item.giasp%>
+                                </td>
+                                <td>
+                                    <span class="qty">
+                                        <%=item.soluong%>
+                                    </span>
+                                    &nbsp;
+                                    <a href="/GiamSoLuong/<%=item.id%>" class="btn  btn-primary btn-rounded ">
+                                        -
+                                    </a>
+                                    <a href="/ThemSoLuong/<%=item.id%>" class="btn  btn-primary btn-rounded ">
+                                        +
+                                    </a>
+                                </td>
+                                <td id="tongtien">
+                                    <%=item.tien %>
+                                </td>
+                                <td>
+                                    <a href='/xoaSPgh/<%=item.id%>'>
+                                        <button class="btn btn-warning" type="button">Xoa</button>
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <%})%>
+                                <tr>
+                                    <td colspan="3">
+                                        <a href="/" style="background:rgb(27, 177, 40);color:white" class="btn">Tiếp Tục Mua Hàng</a>
+                                    </td>
+                                    <td>
+                                        <p style="font-size:17px">TỔNG TIỀN THANH TOÁN :
+                                            <span>
+                                                <%=tongtien%>$</span>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <a class="btn " style="background:rgb(27, 177, 40);color:white">Thanh Toán</a>
+                                    </td>
+                                </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--footer-->
+    <%include ../Footer/footer.ejs%>

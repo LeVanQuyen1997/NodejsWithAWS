@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreshFood</title>
+    <script src="../js/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="../js/jquery.validate.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../css/homepage.css" type="text/css" />
+    <link rel="stylesheet" href="../css/giohang.css" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(() => {
+            $(".h-button").on("click", () => {
+                $(".navbar .nav").toggleClass("showing").fadeIn();
+            })
+            //back to top
+            //check to see if the window is top if not then display button
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.btn-top').fadeIn(500);
+                }
+                else {
+                    $('.btn-top').addClass("top");
+                    $('.btn-top').fadeOut(500);
+                }
+            })
+            //click event to scroll to top
+            $('.btn-top').on('click', () => {
+                $('html, body').animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <!--header-->
+        <div class="row header">
+            <!--logo-->
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6  " id="logo">
+                <a href="/">
+                    <p class="text-center ">
+                        <span>Fast</span>
+                        <i>food</i>
+                    </p>
+                </a>
+            </div>
+            <!--logo-->
+
+            <!--contact-->
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5" id="contact">
+                <!--contact1-->
+
+                <div class="row" id="contact1">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center ">
+                        <div class="ul">
+                            <ul>
+                                <li>
+                                    <i class="glyphicon glyphicon-earphone "></i> &nbsp;0971370494</li>
+                                <li>|</li>
+                                <li>
+                                    <a href="<%= username ? '/thoat' :''%>" data-toggle="modal" data-target="<%=username ?'':'#modalLoginForm1'%>">
+                                        <span>
+                                            <%= username ? "THOÁT" :"ĐĂNG KÍ"%>
+                                        </span>
+                                    </a>
+                                    <% include ../SignIn/index%>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <a href="<%= username ? '#' :''%>" data-toggle="modal" data-target="<%=username ?'':'#modalLoginForm'%>">
+                                        <span>
+                                            <%= username? username:"ĐĂNG NHẬP"%>
+                                        </span>
+                                    </a>
+                                    <% include ../Login/index%>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--contact1-->
+
+                <!--contact2-->
+                <div class="row" id="contact2">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <p>
+                            Miễn phí vận chuyển
+                            <span> ĐƠN HÀNG TRÊN 900K</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!--contact2-->
+            </div>
+            <!--contact-->
+
+            <!--shopcart-->
+            <div class="col-xs-12 col-sm-6 col-md-1 col-lg-1 text-center" id="shop">
+                <a href="/giohang">
+                    <span class="glyphicon glyphicon-shopping-cart cart">
+                        <span class="soluong  ">
+                            <%= soluong? soluong: 0%>
+                        </span>
+                    </span>
+
+                </a>
+            </div>
+            <!--shopcart-->
+        </div>
+        <!--header-->

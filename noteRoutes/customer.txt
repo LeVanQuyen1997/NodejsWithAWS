@@ -1,0 +1,8 @@
+Khi click vao addCart
+
+
+--Thêm bill vào database Billinfo
+--Để lấy được số lượng của sản phẩm thì ta cho một func duyệt getAllBillinfo
+--duyệt xong thì ta lấy cái idprod nhận được từ client so sánh với data duyệt được
+--lấy được cái số lượng
+--

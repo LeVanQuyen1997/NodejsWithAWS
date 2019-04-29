@@ -1,0 +1,94 @@
+[
+    {
+        "Idprod":"P1",
+        "IdprodC":"PC1",
+        "ten":"Sinh Tố Bơ",
+        "img":"../image/sinhtobo.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Sinh tố dừa ngon miệng, dễ uống lại có nhiều tác dụng sức khỏe mà có thể các bạn không để ý đến "
+    },
+    {
+        "Idprod":"P2",
+        "IdprodC":"PC1",
+        "ten":"Sinh Tố Dừa",
+        "img":"../image/sinhtodua.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Sinh tố dừa ngon miệng, dễ uống lại có nhiều tác dụng sức khỏe mà có thể các bạn không để ý đến "
+    },
+    {
+        "Idprod":"P3",
+        "IdprodC":"PC1",
+        "ten":"Sinh Tố Dâu",
+        "price1":"20000",
+        "img":"../image/sinhtodau.png",
+        "price":"10000",
+        "mieuta":"Sinh tố dừa ngon miệng, dễ uống lại có nhiều tác dụng sức khỏe mà có thể các bạn không để ý đến "
+    },
+    {
+        "Idprod":"P4",
+        "IdprodC":"PC2",
+        "ten":"Cơm chiên Trứng",
+        "img":"../image/comchien3.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Chien ngon miệng, giá cả hợp lý , được làm từ cơm và dầu ăn thực vật không chất bảo quản"
+    },
+    {
+        "Idprod":"P5",
+        "IdprodC":"PC3",
+        "ten":"Nước Cam",
+        "img":"../image/nuoc1.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Coca Cala nước giải khát có ga, giúp xua tan căng thẳng mệt mỏi,giao hàng tận nơi"
+    },
+    {
+        "Idprod":"P7",
+        "IdprodC":"PC2",
+        "ten":"Cơm Gà",
+        "img":"../image/comga1.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Ga ngon bổ rẻ cho các chị em văn phòng, giao hàng miễn phí ,giao đến tận nơi"
+    },
+    {
+        "Idprod":"P8",
+        "IdprodC":"PC4",
+        "ten":"Pizza Ngon 1",
+        "img":"../image/pizza1.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Ga ngon bổ rẻ cho các chị em văn phòng, giao hàng miễn phí ,giao đến tận nơi"
+    },
+    {
+        "Idprod":"P9",
+        "IdprodC":"PC4",
+        "ten":"Pizza Ngon 2",
+        "img":"../image/pizza2.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Ga ngon bổ rẻ cho các chị em văn phòng, giao hàng miễn phí ,giao đến tận nơi"
+    },
+    {
+        "Idprod":"P10",
+        "IdprodC":"PC5",
+        "ten":"Xoài",
+        "img":"../image/traicay2.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Ga ngon bổ rẻ cho các chị em văn phòng, giao hàng miễn phí ,giao đến tận nơi"
+    },
+    {
+        "Idprod":"P6",
+        "IdprodC":"PC5",
+        "ten":"Dưa Hấu",
+        "img":"../image/traicay1.png",
+        "price1":"20000",
+        "price":"10000",
+        "mieuta":"Com Ga ngon bổ rẻ cho các chị em văn phòng, giao hàng miễn phí ,giao đến tận nơi"
+    }
+
+
+]

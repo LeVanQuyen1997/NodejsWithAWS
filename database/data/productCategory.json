@@ -1,0 +1,23 @@
+[
+    {
+        "IdprodC":"PC1",
+        "ten":"Sinh Tố"
+    },
+    {
+        "IdprodC":"PC2",
+        "ten":"Cơm "
+    },
+    {
+        "IdprodC":"PC3",
+        "ten":"Nước Giải Khát"
+      
+    },
+    {
+        "IdprodC":"PC4",
+        "ten":"Pizza"
+    },
+    {
+        "IdprodC":"PC5",
+        "ten":"Trái Cây"
+    }
+]

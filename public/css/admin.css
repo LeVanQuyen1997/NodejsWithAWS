@@ -1,0 +1,117 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+@font-face{
+	font-family:header;
+	src:url(../fonts/Merriweather-Bold.ttf) format('truetype');
+	font-size:normal;	
+	font-weight:normal;
+}
+@font-face{
+	font-family:slogan;
+	src:url(../fonts/UTMGloria_0.ttf) format('truetype');
+	font-size:normal;	
+	font-weight:normal;
+}
+body{
+    background: rgb(156, 240, 156);
+}
+.header p{
+    padding:10px;   
+    font-size: 40px;
+    font-family: header;
+    border-bottom: 1px solid rgb(148, 141, 141);
+}
+h3{
+    font-family: slogan;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:red;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+a:hover{
+    text-decoration: none;
+}
+.task a i{
+    font-size: 20px;
+    color:rgb(241, 79, 4);
+    transition: 0.7s ease ;
+    
+}
+.task a i:hover{
+    color:black;
+}
+.task{
+    padding:10px 0px 10px 0px;
+    margin-bottom: 20px;
+    box-shadow: 2px 0px 5px rgb(177, 167, 167); 
+}
+.user:hover {
+    background: rgb(43, 238, 76);
+}
+.bill:hover{
+    background: rgb(43, 238, 76);
+}
+.product:hover{
+    background: rgb(43, 238, 76);
+}
+#menu{
+    padding:20px 57px 20px 57px;
+}
+.user{
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    transition: 0.6s ease-out;
+}
+.product{
+    transition: 0.6s ease-out;
+}
+.bill{
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: 0.6s ease-out;
+}
+.tasks{
+    padding:40px;
+}
+.task a i span{
+    font-family: header;
+    font-size: 20px;
+}
+table tr td img{
+    margin-right: 40px;
+}
+table tr td {
+    font-weight: bold;
+}
+.them{
+    display: none;
+}
+#themsanpham{
+    padding: 3px 40px 3px 40px;
+    font-family: slogan;
+    font-size: 30px;
+    background:rgb(57, 113, 218);
+    margin-bottom: 10px;
+}
+#thanhngang{
+    width: 300px;
+    height: 10px;
+    background: rgb(241, 79, 4);
+    margin: auto;
+    margin-bottom: 30px;
+}
+#product{
+    background: rgba(50, 211, 9, 0.884);
+    padding: 60px;
+    border-radius: 50%;
+}
+
+
+
+
+

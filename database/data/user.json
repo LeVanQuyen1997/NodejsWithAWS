@@ -1,0 +1,27 @@
+[
+    {
+        "ten":"Tri1",
+        "pass":"Tri123",
+        "email":"lvq@gmail.com",
+        "level":"1"
+    },
+    {
+        "ten":"Loi2",
+        "pass":"Loi123",
+        "email":"lvq@gmail.com",
+        "level":"1"
+
+    },
+    {
+        "ten":"Hoang3",
+        "pass":"Hoang123",
+        "email":"lvq@gmail.com",
+        "level":"2"
+    },
+    {
+        "ten":"Quyen",
+        "pass":"Quyen123",
+        "email":"lvq@gmail.com",
+        "level":"1"
+    }
+]

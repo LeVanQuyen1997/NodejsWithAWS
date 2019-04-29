@@ -1,0 +1,109 @@
+<% include ../Header/header.ejs%>
+        <!--menu-->
+
+        <div class=" container-fluid navbar ">
+            <div class="row">
+                <!--navbar-->
+                <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 text-center">
+                    <button class="h-button ">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/">TRANG CHỦ</a>
+                        </li>
+
+                        <li class="dropdown">
+
+                            <a class=" dropdown-toggle" data-toggle="dropdown">SẢN PHẨM
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <% data.Items.forEach((data,index)=> { %>
+                                    <li>
+                                        <a href="/product/<%= data.IdprodC%>">
+                                            <%= data.ten%>
+                                        </a>
+                                    </li>
+
+                                    <% }); %>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="#">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#">GIỚI THIỆU</a>
+                        </li>
+                        <li>
+                            <a href="#">LIÊN HỆ</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--navbar-->
+
+                <!--form-->
+                <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5">
+                    <div class="search-box navbar-form ">
+                        <form class="serach-from" action="/timsp" method="POST">
+                            <input type="text" class="form-control" placeholder="Search Products" name="key" required/>
+                            <button type="submit" class="btn search-btn">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <!--form-->
+
+            </div>
+        </div>
+        <!--menu-->
+        <div class="row slide">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0px">
+                <img src="./../../public/image/slideshow_3.jpg" width="100%" />
+            </div>
+        </div>
+
+
+        <!--content-->
+        <div class="row content">
+            <!--tieu de-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                <p id="whathot">WHAT HOT</p>
+                <p id="sphot">SẢN PHẨM NỔI BẬT</p>
+            </div>
+            <!--tieu de-->
+        </div>
+        <!--product-->
+        <div class="row product">
+            <% data1.Items.forEach((data1,index)=> { %>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="box">
+                        <img src="<%= data1.img%>" alt="" width="100%">
+                        <div class="boxContent">
+                            <h3 class="title text-center">
+                                <%=data1.ten%>
+                            </h3>
+                            </span>
+                            <p class="description text-center">
+                                <%= data1.mieuta%>
+                            </p>
+                        </div>
+                        <div class="boxFooter">
+                            <span class="price">
+                                $
+                                <%=data1.price%>
+                            </span>
+                            <a href="/addCart/<%= data1.Idprod%>" class="dathang ">
+                                <i class="fa fa-shopping-cart"></i> Đặt hàng
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <% }); %>
+        </div>
+        <!--xem them-->
+<% include ../Footer/footer.ejs%>
